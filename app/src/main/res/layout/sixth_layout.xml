@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SixthActivity">
+
+
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"/>
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guide">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#bbeffa">
+
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="next"
+                android:background="#5fe3cb"
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="would"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="next"
+                android:background="#5fe3cb"
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="like"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="next"
+                android:background="#5fe3cb"
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="to"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="next"
+                android:background="#5fe3cb"
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="buy"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="next"
+                android:background="#5fe3cb"
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="next"
+                android:background="#5fe3cb"
+                />
+            <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vowel"
+                android:layout_marginHorizontal="20dp"
+                android:onClick="next"
+                android:background="#5fe3cb"
+                />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+

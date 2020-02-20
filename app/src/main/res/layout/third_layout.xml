@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbeffa"
+    tools:context=".ThirdActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <Button
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:onClick="next"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/longbutton"
+        android:layout_width="@+id/guideline"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:text="Next"
+        android:onClick="next"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text"
+        android:text="Next"
+        android:layout_width="@+id/guideline"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/longbutton"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline"/>
+
+
+</android.support.constraint.ConstraintLayout>

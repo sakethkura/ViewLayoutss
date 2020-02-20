@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.kurasaketh.viewlayoutss">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity"
+            android:label="Second Activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kurasaketh.viewlayoutss.SecondActivity"/>
+        </activity>
+        <activity android:name=".ThirdActivity"
+            android:label="Third Activity"
+            android:parentActivityName=".SecondActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kurasaketh.viewlayoutss.ThirdActivity"/>
+        </activity>
+        <activity android:name=".FourthActivity"
+            android:label="Third Activity"
+            android:parentActivityName=".ThirdActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kurasaketh.viewlayoutss.FourthActivity"/>
+        </activity>
+        <activity android:name=".FifthActivity"
+            android:label="Third Activity"
+            android:parentActivityName=".FourthActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kurasaketh.viewlayoutss.FifthActivity"/>
+        </activity>
+        <activity android:name=".SixthActivity"
+            android:label="Sixth Activity"
+            android:parentActivityName=".FifthActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kurasaketh.viewlayoutss.SixthActivity"/>
+        </activity>
+        <activity android:name=".SeventhActivity"
+            android:label="Seventh Activity"
+            android:parentActivityName=".SixthActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.kurasaketh.viewlayoutss.SeventhActivity"/>
+        </activity>
+    </application>
+
+</manifest>
