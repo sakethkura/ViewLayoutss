@@ -12,7 +12,7 @@ public class SeventhActivity extends Activity {
         setContentView(R.layout.seventh_layout);
     }
     public void next(View v){
-        Intent i = new Intent(getApplicationContext(), SixthActivity.class);
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
     }
 }
